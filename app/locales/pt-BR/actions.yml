@@ -1,0 +1,26 @@
+pt-BR:
+  actions:
+      add: "Cadastro %{model}"
+      back: "Voltar"
+      cancel: "Cancelar Alteração"
+      save: "Salvar Cadastro %{model}"
+      information: "Informação %{model}"
+      viewing: "Visualizando %{model}"
+      disable_with: "Carregando ..."
+
+      new: "Novo %{model}"
+      new_fem: "Nova %{model}"
+      view: "Visualizar Cadastro"
+      edit: "Editar Cadastro"
+      delete: "Excluir Cadastro"
+      confirm: "Você confirma a exclusão?"
+      close: "Fechar"
+
+      logout: "Sair do Painel"
+      view_profile: "Visualizar Perfil"
+      edit_profile: "Editar Perfil"
+
+      menu: "Menu - %{model}"
+
+      view_record: "Visualizar Cadastro"
+      edit_record: "Editar Cadastro"

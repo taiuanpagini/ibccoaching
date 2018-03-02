@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Listagem de Pinterests</h2>
+
+            <%= link_to "Adicionar Pinterest", new_pinterest_path, class: "btn btn-primary" %> <br>
+
+            <%= render 'alerts/messages', object: @pinterest %> <br>
+
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th><%= t("activerecord.attributes.pinterest.id") %></th>
+                        <th><%= t("activerecord.attributes.pinterest.title") %></th>
+                        <th><%= t("activerecord.attributes.pinterest.image") %></th>
+                        <th><%= t("activerecord.attributes.pinterest.description") %></th>
+                    </tr>
+                    <%= render @pinterests %>
+                </thead>
+            </table>
+        </div>
+    </div>
+</div>

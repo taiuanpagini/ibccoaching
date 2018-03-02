@@ -1,0 +1,12 @@
+pt-BR:
+  flash:
+    pinterests:
+      create:
+        notice: Registro criado com sucesso.
+        alert: Não foi possível criar o registro. Verifique!
+      update:
+        notice: Registro atualizado com sucesso.
+        alert: Não foi possível atualizar a registro. Verifique!
+      destroy:
+        notice: Registro excluido com sucesso.
+        alert: Não foi possível excluir o registro. Verifique!

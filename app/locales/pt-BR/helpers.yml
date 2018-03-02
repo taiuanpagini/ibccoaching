@@ -1,0 +1,6 @@
+pt-BR:
+  helpers:
+    submit:
+      user:
+        create: Salvar
+        update: Atualizar

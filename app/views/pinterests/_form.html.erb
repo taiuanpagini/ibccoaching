@@ -1,0 +1,9 @@
+<%= form_for @pinterest do |f| %>
+    <%= f.label :title %> <br>
+    <%= f.text_field :title, placeholder: "Título do Pinterest" %> <br>
+    <%= f.label :image %> <br>
+    <%= f.file_field :image %> <br>
+    <%= f.label :description %> <br>
+    <%= f.text_area :description, cols: "50", rows: "10", placeholder: "Descrição do Pinterest" %> <br><br>
+    <%= f.submit "Enviar" %>
+<% end %>

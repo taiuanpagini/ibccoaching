@@ -1,0 +1,10 @@
+<tr>
+    <td><%= pinterest.id %></td>
+    <td><%= pinterest.title %></td>
+    <td><%= image_tag pinterest.image.url(:mini) %></td>
+    <td><%= pinterest.description %></td>
+    <td>
+        <%= link_to "Editar", edit_pinterest_path(pinterest), class: "btn btn-warning" %>
+        <%= link_to "Excluir", pinterest_path(pinterest), :data => { :confirm => "Deseja realmente excluir?" }, :method => :delete, class: "btn btn-danger" %>
+    </td>
+</tr>

@@ -1,0 +1,10 @@
+<% unless flash.nil? %>
+    <% flash.each do |type, message| %>
+        <% if type == "notice" %>
+            <%= message %>
+        <% else %>
+            <%= message %>
+        <% end %>
+    <% end %>
+<% end %>
+

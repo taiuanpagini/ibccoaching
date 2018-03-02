@@ -1,0 +1,8 @@
+pt-BR:
+  activerecord:
+    attributes:
+        pinterest:
+            id: ID
+            title: Título do Pinterest
+            image: Imagem
+            description: Descrição
