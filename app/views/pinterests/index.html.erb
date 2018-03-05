@@ -11,11 +11,16 @@
                 <thead>
                     <tr>
                         <th><%= t("activerecord.attributes.pinterest.id") %></th>
-                        <th><%= t("activerecord.attributes.pinterest.title") %></th>
-                        <th><%= t("activerecord.attributes.pinterest.image") %></th>
                         <th><%= t("activerecord.attributes.pinterest.description") %></th>
+                        <th width="160">Ações</th>
                     </tr>
-                    <%= render @pinterests %>
+                    <% if @pinterests.present? %>
+                        <%= render @pinterests %>
+                    <% else %>
+                        <tr class="text-center">
+                            <td colspan="4">Nenhum registro encontrado</td>
+                        </tr>                        
+                    <% end %>
                 </thead>
             </table>
         </div>

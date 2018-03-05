@@ -5,3 +5,7 @@
 .form-inline {
     padding: 20px 0;
 }
+
+.col-md-3.col-sm-3:nth-child(4n+1) {
+    clear: both;
+}

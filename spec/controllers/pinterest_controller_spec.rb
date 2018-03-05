@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe PinterestController, type: :controller do
+RSpec.describe PinterestsController, type: :controller do
   describe "PUT #ativo" do
     before do
     end
