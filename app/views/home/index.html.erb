@@ -12,13 +12,11 @@
             <% end %>            
         </div>
 
-        <% if params[:query] == nil %>
+        <% if :query == nil %>
             <h3>Nenhum registro encontrado!</h3>
         <% else %>
-            <% @pinterests.each do |pinterest| %>     
-                <% if params[:query] == "" %>       
-                    <h3>Nenhum registro encontrado!</h3>
-                <% else %>
+            <% if @pinterests.present? %>
+                <% @pinterests.each do |pinterest| %>     
                     <div class="col-md-3 col-sm-3">
                         <div class="thumbnail">
                             <%= image_tag pinterest.image.url(:big), class: "img-responsive" %>
@@ -31,7 +29,9 @@
                             </div>
                         </div>
                     </div>
-                <% end%>
+                <% end %>
+            <% else %>
+                <h3>Nenhum registro encontrado!</h3>
             <% end %>
         <% end %>
     </div>

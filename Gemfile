@@ -12,8 +12,6 @@ gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
 
-gem 'paperclip', '~> 5.2.1'
-
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
@@ -36,13 +34,15 @@ gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-gem 'rspec-rails'
-
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
   gem 'thin'
+  gem 'rspec-rails'
   gem 'better_errors', '~> 2.4'
+  #gem 'factory_girl_rails'
+  gem 'factory_bot_rails'
+  gem 'paperclip', '~> 5.2.1'
 end
 
 group :development do
@@ -51,5 +51,10 @@ group :development do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+end
+
+group :test do
+  gem 'factory_bot_rails'
+  gem 'ffaker'
 end
 
